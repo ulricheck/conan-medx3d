@@ -49,7 +49,6 @@ MESSAGE(STATUS "Using External Root: $ENV{H3D_EXTERNAL_ROOT}")
     def package(self):
         self.copy(pattern='*.h', dst="include", src="source/include", keep_path=True)
         self.copy(pattern='FindMedX3D.cmake', dst="cmake", keep_path=False)
-        self.copy(pattern='*', src="source/examples", dst="examples", keep_path=False)
         self.copy(pattern='*', src="source/x3d", dst="examples/medx3d", keep_path=False)
         self.copy(pattern='*', src="source/data", dst="examples/data", keep_path=False)
 
